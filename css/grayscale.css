@@ -84,14 +84,19 @@ a:focus, a:hover {
   color: fade(white, 80%);
   outline: none;
   background-color: transparent;
+
+
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: transparent;
+  background-color: black;
 }
 
 @media (min-width: 992px) {
+  #mainNav a {
+    color: black;
+  }
   #mainNav {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -100,13 +105,20 @@ a:focus, a:hover {
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
-    background: transparent;
+    background: ghostwhite;
+    color: green!important;
   }
   #mainNav.navbar-shrink {
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: black;
+
+  }
+
+  #mainNav.navbar-shrink a{
+    color: white!important;
+
   }
   #mainNav .nav-link.active {
     outline: none;
@@ -280,4 +292,13 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+.cadetblue {
+  color: cadetblue!important;
+}
+
+.black{
+  color: white!important;
+  background-color: rgba(0, 0, 0, 0.5);
 }
